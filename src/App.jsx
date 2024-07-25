@@ -2,11 +2,11 @@ import React from 'react'
 
 function App() {
   return (
-    <div className=' flex flex-col gap-16 w-11/12 p-10'>
-      <div className=' flex gap-5 '>
-        <h1 className=' font-medium sm:text-sm text-lg'>Employee </h1>
+    <div className=' flex flex-col gap-16 w-11/12 p-5 lg:p-10 '>
+      <div className=' gap-5 flex float-right'>
+        <h1 className=' font-medium sm:text-sm lg:text-lg'>Employee </h1>
         <i class="fa-solid fa-greater-than text-xs p-2"></i>
-        <button className=' button rounded-2xl bg-slate-300 pl-2 pr-2 font-medium sm:text-xs text-lg'>Thomas Lang</button>
+        <button className=' button rounded-2xl bg-slate-300 pl-2 pr-2 font-medium sm:text-xs lg:text-lg'>Thomas Lang</button>
       </div>
 
       <div>
@@ -20,9 +20,9 @@ function App() {
               <p className=' text-sm'>Team Manager</p>
             </div>
           </div>
-          <div className=' '>
-            <button className=' bg-blue-500 justify-center button rounded-2xl text-sm text-white lg:pl-5 lg:pr-5 lg:pt-2 lg:pb-2 sm:pl-96'>
-              Edit Profile<i class="fa-solid fa-pen gap-5 ml-3"></i></button>
+          <div className=' mr-20'>
+            <button className=' bg-blue-500 justify-center button rounded-2xl text-sm text-white lg:pl-5 lg:pr-5 lg:pt-2 lg:pb-2 sm:w-full'>
+              Edit Profile<i class="fa-solid fa-pen ml-3"></i></button>
           </div>
         </div>
         <div className=' flex flex-col gap-10 '>
@@ -94,6 +94,80 @@ function App() {
                 <li className=' font-medium'>India</li>
               </ul>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className=' flex flex-col gap-10'>
+        <h1 className=' font-bold text-lg'> List of device</h1>
+
+        <div className=' flex justify-between'>
+          <div>
+            <p>Name/Title</p>
+          </div>
+          <div className=' flex gap-20'>
+            <div className=' flex '>
+              <h1> Expair date</h1>
+              <i class="fa-solid fa-caret-down p-1"></i>
+            </div>
+            <div>
+              <p> Status</p>
+            </div>
+          </div>
+        </div>
+
+        <div className=' flex justify-between '>
+          <div className=' flex gap-5'>
+            <i class="fa-solid fa-laptop"></i>
+            <h1 className=' font-medium'>MacBook Pro M2 13ln-16gb-256-gb-2023</h1>
+          </div>
+          <div className=' flex gap-16'>
+            <h1>Jan 13 2022</h1>
+            <button className=' text-green-700 bg-green-100 button rounded-2xl p-1 text-sm'>Allocated</button>
+          </div>
+        </div>
+
+        <div className=' flex justify-between'>
+          <div className=' flex gap-5'>
+            <i class="fa-solid fa-computer-mouse"></i>
+            <h1>MacBook Pro M2 13ln-16gb-256-gb-2023</h1>
+          </div>
+          <div className=' flex gap-16'>
+            <h1>Jan 13 2022</h1>
+            <button>UnAllocated</button>
+          </div>
+        </div>
+
+        <div className=' flex justify-between'>
+          <div className=' flex gap-5'>
+            <i class="fa-solid fa-keyboard"></i>
+            <h1>MacBook Pro M2 13ln-16gb-256-gb-2023</h1>
+          </div>
+          <div className=' flex gap-16'>
+            <h1>Jan 13 2022</h1>
+            <button>Allocated</button>
+          </div>
+        </div>
+
+        <div className=' flex justify-between'>
+          <div className=' flex gap-5'>
+            <i class="fa-solid fa-route"></i>
+            <h1>MacBook Pro M2 13ln-16gb-256-gb-2023</h1>
+          </div>
+          <div className=' flex gap-16'>
+            <h1>Jan 13 2022</h1>
+            <button>Expired</button>
+          </div>
+        </div>
+
+        <div className=' flex justify-between'>
+          <div className=' flex gap-5'>
+            <i class="fa-solid fa-tv"></i>
+            <h1>MacBook Pro M2 13ln-16gb-256-gb-2023</h1>
+          </div>
+          <div className=' flex gap-16'>
+            <h1>Jan 13 2022</h1>
+            <button>Deprecated</button>
           </div>
         </div>
 
