@@ -20,8 +20,8 @@ function App() {
               <p className=' text-sm'>Team Manager</p>
             </div>
           </div>
-          <div className=''>
-            <button className=' bg-blue-500 justify-center button rounded-2xl text-sm text-white pl-5 pr-5 pt-1 pb-1 lg:pl-5 lg:pr-5 lg:pt-2 lg:pb-2 '>
+          <div className='  w-full  '>
+            <button className=' bg-blue-500 justify-center button rounded-2xl text-sm text-white pl-5 pr-5 pt-1 pb-1 lg:pl-5 lg:pr-5 lg:pt-2 lg:pb-2sm:w-30 w-full'>
               Edit Profile<i class="fa-solid fa-pen "></i></button>
           </div>
         </div>
@@ -138,19 +138,19 @@ function App() {
           </div>
         </div> */}
 
-        <table>
-          <tr> 
+        <table >
+          <tr className=' '> 
             <th className=' w-30 '>Name/Title</th>
             <th> Expair date <i class="fa-solid fa-caret-down p-1"></i></th>
             <th>Status</th>
           </tr>
-          <tr>
+          <tr className=' '>
             <th><i class="fa-solid fa-laptop"></i></th>
             <th className=' text-left'>MacBook Pro M2 13ln-16gb-256-gb-2023</th>
             <th>Jan 13 2022</th>
             <th>Allocated</th>
           </tr>
-          <tr>
+          <tr className=' '>
             <th><i class="fa-solid fa-keyboard"></i></th>
             <th className=' text-left' >MacBook Pro M2 13ln-16gb-256-gb-2023</th>
             <th>Jan 13 2022</th>
