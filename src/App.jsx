@@ -10,38 +10,38 @@ function App() {
       </div>
 
       <div className=' flex flex-col gap-16 '>
-        <div className=' justify-between items-center flex md:flex-col lg:row'>
-          <div className=' gap-5 items-center flex flex-col lg:flex-row'>
+        <div className=' justify-between items-center flex flex-col sm:flex-row'>
+          <div className=' gap-5 items-center flex flex-col sm:flex-row'>
             <div>
               <i class="fa-solid fa-earth-americas text-7xl "></i>
             </div>
-            <div>
-              <h1 className=' font-bold text-2xl'>Thomas Lang</h1>
+            <div className=' text-center sm:text-left '>
+              <h1 className=' font-bold text-xl sm:text-2xl md:text-2xl'>Thomas Lang</h1>
               <p className=' text-sm'>Team Manager</p>
             </div>
           </div>
           <div className=''>
-            <button className=' bg-blue-500 justify-center button rounded-2xl text-sm text-white lg:pl-5 lg:pr-5 lg:pt-2 lg:pb-2 w-full lg:w-32'>
+            <button className=' bg-blue-500 justify-center button rounded-2xl text-sm text-white pl-5 pr-5 pt-1 pb-1 lg:pl-5 lg:pr-5 lg:pt-2 lg:pb-2 '>
               Edit Profile<i class="fa-solid fa-pen "></i></button>
           </div>
         </div>
         <div className=' flex flex-col gap-10 '>
           <div className=' flex flex-col gap-5 '>
             <h1 className=' text-lg font-bold'>Personal Imformation</h1>
-            <div className='flex text-center gap-4 lg:gap-20 flex-col lg:flex-row'>
-              <ul className='text-left flex flex-row lg:flex-col justify-between'>
+            <div className='flex text-center gap-3 sm:gap-20 flex-col sm:flex-row'>
+              <ul className='text-left flex flex-row sm:flex-col justify-between'>
                 <li className='text-sm '>First Name</li>
                 <li className=' font-medium'>Ankur</li>
               </ul>
-              <ul className='text-left  flex flex-row lg:flex-col justify-between'>
+              <ul className='text-left  flex flex-row sm:flex-col justify-between'>
                 <li className='text-sm'>Last Name</li>
                 <li className=' font-medium'>Raj</li>
               </ul>
-              <ul className='text-left  flex flex-row lg:flex-col justify-between'>
+              <ul className='text-left  flex flex-row sm:flex-col justify-between'>
                 <li className='text-sm'>Email</li>
                 <li className=' font-medium'>kjdk12@gmail.com</li>
               </ul>
-              <ul className='text-left  flex flex-row lg:flex-col justify-between'>
+              <ul className='text-left  flex flex-row sm:flex-col justify-between'>
                 <li className='text-sm'>Phone</li>
                 <li className=' font-medium'>+91-7672672878</li>
               </ul>
@@ -50,24 +50,24 @@ function App() {
 
           <div className=' flex flex-col gap-5 '>
             <h1 className=' text-lg font-bold'>Employment Deatails</h1>
-            <div className='flex text-center gap-4 lg:gap-20  flex-col lg:flex-row'>
-              <ul className='text-left  flex flex-row lg:flex-col justify-between'>
+            <div className='flex text-center gap-4 sm:gap-20  flex-col sm:flex-row'>
+              <ul className='text-left  flex flex-row sm:flex-col justify-between'>
                 <li className='text-sm'>Job Title</li>
                 <li className=' font-medium'>Team Manager</li>
               </ul>
-              <ul className='text-left  flex flex-row lg:flex-col justify-between'>
+              <ul className='text-left  flex flex-row sm:flex-col justify-between'>
                 <li className='text-sm'>Department</li>
                 <li className=' font-medium'>Creative Design</li>
               </ul>
-              <ul className='text-left  flex flex-row lg:flex-col justify-between'>
+              <ul className='text-left  flex flex-row sm:flex-col justify-between'>
                 <li className='text-sm'>Start Date</li>
                 <li className=' font-medium'>kjdk12@gmail.com</li>
               </ul>
-              <ul className='text-left  flex flex-row lg:flex-col justify-between'>
+              <ul className='text-left  flex flex-row sm:flex-col justify-between'>
                 <li className='text-sm'>End Date</li>
                 <li className=' font-medium'>+91-7672672878</li>
               </ul>
-              <ul className='text-left  flex flex-row lg:flex-col justify-between'>
+              <ul className='text-left  flex flex-row sm:flex-col justify-between'>
                 <li className='text-sm'>Employment Status</li>
                 <li className=' font-normal text-green-500'>Active</li>
               </ul>
@@ -76,20 +76,20 @@ function App() {
 
           <div className=' flex flex-col gap-5' >
             <h1 className=' text-lg font-bold'>Priamry Delivary Adress</h1>
-            <div className='flex text-center gap-4 lg:gap-20 flex-col lg:flex-row'>
-              <ul className='text-left  flex flex-row lg:flex-col justify-between'>
+            <div className='flex text-center gap-4 sm:gap-20 flex-col sm:flex-row'>
+              <ul className='text-left  flex flex-row sm:flex-col justify-between'>
                 <li className='text-sm'>Adress</li>
                 <li className=' font-medium'>Team Manager</li>
               </ul>
-              <ul className='text-left  flex flex-row lg:flex-col justify-between'>
+              <ul className='text-left  flex flex-row sm:flex-col justify-between'>
                 <li className='text-sm'>City/Adress</li>
                 <li className=' font-medium'>Delhi</li>
               </ul>
-              <ul className='text-left  flex flex-row lg:flex-col justify-between'>
+              <ul className='text-left  flex flex-row sm:flex-col justify-between'>
                 <li className='text-sm'>Pascod</li>
                 <li className=' font-medium'>841992</li>
               </ul>
-              <ul className='text-left  flex flex-row lg:flex-col justify-between'>
+              <ul className='text-left  flex flex-row sm:flex-col justify-between'>
                 <li className='text-sm'>Country</li>
                 <li className=' font-medium'>India</li>
               </ul>
