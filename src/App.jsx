@@ -27,7 +27,7 @@ function App() {
         </div>
         <div className=' flex flex-col gap-10 '>
           <div className=' flex flex-col gap-5 '>
-            <h1 className=' text-lg font-bold'>Personal Imformation</h1>
+            <h1 className=' text-lg font-bold'>Personal Information</h1>
             <div className='flex text-center gap-3 sm:gap-20 flex-col sm:flex-row'>
               <ul className='text-left flex flex-row sm:flex-col justify-between'>
                 <li className='text-sm '>First Name</li>
@@ -47,6 +47,18 @@ function App() {
               </ul>
             </div>
           </div>
+
+          {/* <table>
+            <tr className=' text-left'>
+              <th>Personal Imformation</th>
+            </tr>
+            <tr className=' text-left '>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+              <th>Phone</th>
+            </tr>
+          </table> */}
 
           <div className=' flex flex-col gap-5 '>
             <h1 className=' text-lg font-bold'>Employment Deatails</h1>
@@ -75,10 +87,10 @@ function App() {
           </div>
 
           <div className=' flex flex-col gap-5' >
-            <h1 className=' text-lg font-bold'>Priamry Delivary Adress</h1>
+            <h1 className=' text-lg font-bold'>Priamry Delivary Address</h1>
             <div className='flex text-center gap-4 sm:gap-20 flex-col sm:flex-row'>
               <ul className='text-left  flex flex-row sm:flex-col justify-between'>
-                <li className='text-sm'>Adress</li>
+                <li className='text-sm'>Address</li>
                 <li className=' font-medium'>Team Manager</li>
               </ul>
               <ul className='text-left  flex flex-row sm:flex-col justify-between'>
@@ -98,14 +110,16 @@ function App() {
         </div>
       </div>
 
+      {/* ----------------------------List of Device---------------------------------------------------------- */}
+
       <div className=' flex flex-col gap-10'>
         <h1 className=' font-bold text-lg'> List of device</h1>
 
-        <div className=' flex justify-between'>
+        {/* <div className=' flex justify-between'>
           <div>
             <p>Name/Title</p>
           </div>
-          <div className=' flex gap-20'>
+          <div className=' flex gap-20 invisible sm:visible'>
             <div className=' flex '>
               <h1> Expair date</h1>
               <i class="fa-solid fa-caret-down p-1"></i>
@@ -114,68 +128,31 @@ function App() {
               <p> Status</p>
             </div>
           </div>
-        </div>
-
-        {/* <div className=' flex justify-between sm:flex-row flex-wrap gap:sm-5 '>
-          <div className=' flex gap-5 '>
-            <i class="fa-solid fa-laptop"></i>
-            <h1 className=' font-medium'>MacBook Pro M2 13ln-16gb-256-gb-2023</h1>
-          </div>
-          <div className=' flex gap-16 sm:justify-center sm:items-center'>
-            <h1>Jan 13 2022</h1>
-            <button className=' text-green-700 bg-green-100 button rounded-2xl p-1 text-sm'>Allocated</button>
-          </div>
-        </div>
-
-        <div className=' flex justify-between sm:flex-row flex-wrap'>
-          <div className=' flex gap-5'>
-            <i class="fa-solid fa-computer-mouse"></i>
-            <h1  className=' font-medium'>MacBook Pro M2 13ln-16gb-256-gb-2023</h1>
-          </div>
-          <div className=' flex gap-16'>
-            <h1>Jan 13 2022</h1>
-            <button className=' text-yellow-600 bg-yellow-100 button rounded-2xl p-1 text-sm'>UnAllocated</button>
-          </div>
         </div> */}
 
-        <table >
-          <tr className=' '> 
-            <th className=' w-30 '>Name/Title</th>
-            <th> Expair date <i class="fa-solid fa-caret-down p-1"></i></th>
-            <th>Status</th>
-          </tr>
-          <tr className=' '>
-            <th><i class="fa-solid fa-laptop"></i></th>
-            <th className=' text-left'>MacBook Pro M2 13ln-16gb-256-gb-2023</th>
-            <th>Jan 13 2022</th>
-            <th>Allocated</th>
-          </tr>
-          <tr className=' '>
-            <th><i class="fa-solid fa-keyboard"></i></th>
-            <th className=' text-left' >MacBook Pro M2 13ln-16gb-256-gb-2023</th>
-            <th>Jan 13 2022</th>
-            <th>UnAllocated</th>
-          </tr>
-          <tr>
-            <th><i class="fa-solid fa-route"></i></th>
-            <th className=' text-left'>MacBook Pro M2 13ln-16gb-256-gb-2023</th>
-            <th>Jan 13 2022</th>
-            <th>Allocated</th>
-          </tr>
-          <tr>
-            <th><i class="fa-solid fa-tv"></i></th>
-            <th className=' text-left' >MacBook Pro M2 13ln-16gb-256-gb-2023</th>
-            <th>Jan 13 2022</th>
-            <th>UnAllocated</th>
-          </tr>
-          <tr className=' justify-between'>
-            <th className=' w-20'><i class="fa-solid fa-computer-mouse"></i></th>
-            <th className=' text-left'>MacBook Pro M2 13ln-16gb-256-gb-2023</th>
-            <th>Jan 13 2022</th>
-            <th>UnAllocated</th>
-          </tr>
-        </table>
+      <div className=' overflow-auto rounded-lg'>
+        <table className=' w-full border-collapse '>
+          <thead className=' table-fixed'>
+            <tr>
+              <th>Name/Title</th>
+              <th className=' invisible sm:visible'> 
+                <div>Expair date  <i class="fa-solid fa-caret-down p-1"></i></div> </th>
+              <th className=' invisible sm:visible'> Status</th>
+            </tr>
+          </thead>
 
+          <tbody className=' table-fixed'>
+          <tr className=' '>
+            <td className='  text-left'><i class="fa-solid fa-laptop "></i></td>
+            <td className=' text-left whitespace-nowrap font-medium'>MacBook Pro M2 13ln-16gb-256-gb-2023</td>
+            <td className=' whitespace-nowrap font-medium'>Jan 13 2022</td>
+            {/* <th className=' '>Allocated</th> */}
+            <td> <button className=' text-green-700 bg-green-100 button rounded-2xl p-1 text-sm'>Allocated</button></td>
+          </tr>
+
+          </tbody>
+        </table>
+      </div>
         {/* <div className=' flex justify-between sm:flex-row flex-wrap'>
           <div className=' flex gap-5'>
             <i class="fa-solid fa-keyboard"></i>
